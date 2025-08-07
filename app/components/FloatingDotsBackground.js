@@ -1,10 +1,21 @@
-import { useEffect, useRef } from "react";
+"use client";
+import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
 const FloatingDotsBackground = () => {
   const mountRef = useRef(null);
+  const [viewportHeight, setViewportHeight] = useState(0);
 
   useEffect(() => {
+    // Set initial height and update on resize
+    const updateHeight = () => {
+      setViewportHeight(window.innerHeight);
+    };
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+
+    // Three.js setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -31,7 +42,7 @@ const FloatingDotsBackground = () => {
         (Math.random() - 0.5) * 200
       );
       particle.userData = {
-        speed: 0.05 + Math.random() * 0.1
+        speed: 0.05 + Math.random() * 0.1,
       };
       scene.add(particle);
       particles.push(particle);
@@ -39,7 +50,7 @@ const FloatingDotsBackground = () => {
 
     const animate = () => {
       requestAnimationFrame(animate);
-      particles.forEach(p => {
+      particles.forEach((p) => {
         p.position.y += p.userData.speed;
         if (p.position.y > 100) p.position.y = -100;
       });
@@ -56,6 +67,7 @@ const FloatingDotsBackground = () => {
     window.addEventListener("resize", handleResize);
 
     return () => {
+      window.removeEventListener("resize", updateHeight);
       window.removeEventListener("resize", handleResize);
       mountRef.current.removeChild(renderer.domElement);
       renderer.dispose();
@@ -71,9 +83,10 @@ const FloatingDotsBackground = () => {
         left: 0,
         zIndex: -1,
         width: "100vw",
-        height: "100vh",
-        background: "radial-gradient(circle at center, #29223A 0%, #000000 100%)",
-        overflow: "hidden"
+        height: `${viewportHeight}px`,
+        background:
+          "radial-gradient(circle at center, #29223A 0%, #000000 100%)",
+        overflow: "hidden",
       }}
     />
   );
