@@ -1,0 +1,36 @@
+@import "tailwindcss";
+*{
+  box-sizing: border-box;
+}
+
+.border-gradient {
+    background-image: linear-gradient(white, white), linear-gradient(to right, red, purple,blue,green,yellow,orange,pink);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+.gradient-text {
+  background: linear-gradient(to right, #8c00fe, #6100febd, rgba(89, 0, 255, 0.589));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Applies to Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1e1b2e; /* darker background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* light gray scrollbar thumb */
+  border-radius: 8px;
+  border: 2px solid #1e1b2e; /* creates inner padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa; /* lighter on hover */
+}
