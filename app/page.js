@@ -10,19 +10,19 @@ import { useState } from "react";
 export default function Home() {
   const [showLoading, setshowLoading] = useState(false);
   const downloadCV = () => {
-  setshowLoading(true);
-  
-  // Simulate a delay before download starts
-  setTimeout(() => {
-    window.location.href = "/CV-Moiz.pdf";
-    setshowLoading(false); // hide loader AFTER redirect
-  }, 1500);
-};
+    setshowLoading(true);
+
+    // Simulate a delay before download starts
+    setTimeout(() => {
+      window.location.href = "/CV-Moiz.pdf";
+      setshowLoading(false); // hide loader AFTER redirect
+    }, 1500);
+  };
 
   return (
     <>
       {showLoading && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#29223a]/70">
+        <div className="fixed top-0 left-0 h-screen w-screen z-[9999] flex items-center justify-center bg-[#29223a]/70">
           <TailSpin
             height="80"
             width="80"
@@ -32,6 +32,7 @@ export default function Home() {
           />
         </div>
       )}
+
       <FloatingDotsBackground />
       <div className="flex h-screen justify-evenly gap-x-4 max-[915px]:flex-col-reverse">
         <div className="w-full flex flex-col justify-center items-start pl-[6%] max-[915px]:items-center max-[915px]:text-center">

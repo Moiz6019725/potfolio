@@ -6,12 +6,12 @@ const MyWork = () => {
     <>
       <div>
         <div className="flex flex-col m-auto p-auto">
-          <h1 className="flex py-5 px-5 mx-5 font-bold text-4xl text-white">
+          <h1 className="flex py-5 px-5 mx-auto font-bold text-4xl text-center text-white">
             My Works
           </h1>
           <div className="horizontal-scroll w-5/6 m-auto flex overflow-x-scroll pb-10 hide-scroll-bar">
             <div className="flex flex-nowrap lg:ml-7 md:ml-20 gap-x-5">
-              <div className="w-80 rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+              <div className="w-80 bg-[#0f0b1b] rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
                 <a href="#">
                   <Image
                     className="rounded-t-lg"
@@ -23,7 +23,7 @@ const MyWork = () => {
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    <h5 className="text-white mb-2 text-2xl font-bold tracking-tight">
                       Video Player App like YouTube
                     </h5>
                   </a>
@@ -51,7 +51,7 @@ const MyWork = () => {
                 </div>
               </div>
 
-              <div className="w-80 rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+              <div className="w-80 bg-[#0f0b1b] rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
                 <a href="#">
                   <Image
                     className="rounded-t-lg"
@@ -63,7 +63,7 @@ const MyWork = () => {
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    <h5 className="text-white mb-2 text-2xl font-bold tracking-tight">
                       Dentist Application UI (html,css)
                     </h5>
                   </a>
@@ -91,7 +91,7 @@ const MyWork = () => {
                 </div>
               </div>
 
-              <div className="w-80 rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+              <div className="w-80 bg-[#0f0b1b] rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
                 <a href="#">
                   <Image
                     className="rounded-t-lg"
@@ -103,7 +103,7 @@ const MyWork = () => {
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    <h5 className="text-white mb-2 text-2xl font-bold tracking-tight">
                       Passwords Saver (local storage)
                     </h5>
                   </a>
@@ -131,7 +131,7 @@ const MyWork = () => {
                 </div>
               </div>
 
-              <div className="w-80 rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+              <div className="w-80 bg-[#0f0b1b] rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
                 <a href="#">
                   <Image
                     className="rounded-t-lg"
@@ -143,7 +143,7 @@ const MyWork = () => {
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    <h5 className="text-white mb-2 text-2xl font-bold tracking-tight">
                       Task Saver (local storage-ReactJs)
                     </h5>
                   </a>
@@ -171,7 +171,7 @@ const MyWork = () => {
                 </div>
               </div>
 
-              <div className="w-80 rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+              <div className="w-80 bg-[#0f0b1b] rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
                 <a href="#">
                   <Image
                     className="rounded-t-lg"
@@ -183,7 +183,7 @@ const MyWork = () => {
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    <h5 className="text-white mb-2 text-2xl font-bold tracking-tight">
                       Twitter Clone With UI only (NodeJs)
                     </h5>
                   </a>
@@ -211,7 +211,7 @@ const MyWork = () => {
                 </div>
               </div>
 
-              <div className="w-80 rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+              <div className="w-80 bg-[#0f0b1b] rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
                 <a href="#">
                   <Image
                     className="rounded-t-lg"
@@ -223,7 +223,7 @@ const MyWork = () => {
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    <h5 className="text-white mb-2 text-2xl font-bold tracking-tight">
                       Music Player App like spotify
                     </h5>
                   </a>
@@ -251,7 +251,7 @@ const MyWork = () => {
                 </div>
               </div>
 
-              <div className="w-80 rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
+              <div className="w-80 bg-[#0f0b1b] rounded-lg shadow-2xl hover:scale-[1.02] transition-transform duration-300 ease-in-out">
                 <a href="#">
                   <Image
                     className="rounded-t-lg"
@@ -263,7 +263,7 @@ const MyWork = () => {
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    <h5 className="text-white mb-2 text-2xl font-bold tracking-tight">
                       Funding App (with payment integration)
                     </h5>
                   </a>
