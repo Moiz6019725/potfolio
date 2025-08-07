@@ -82,7 +82,7 @@ const Navbar = () => {
               sideBarRef.current.style.right = "-100%";
             }
           }}
-          className="w-6 h-6 sidebar cursor-pointer hidden max-[715px]:block hover:bg-[#422E71] rounded-md text-black font-semibold transition-colors"
+          className="w-6 h-6 sidebar cursor-pointer hidden max-[715px]:block hover:bg-[#422E71] rounded-md text-white font-semibold transition-colors"
         >
           <i className="fa-solid fa-ellipsis-vertical"></i>
         </button>
@@ -92,7 +92,7 @@ const Navbar = () => {
         className="sidebar h-screen w-3/4 bg-[#29223A] absolute right-[-100%] top-16 z-10 shadow-2xl transition-all duration-300 ease-in-out"
       >
         <button
-        className="hover:bg-[#60646463] rounded-md text-black font-semibold transition-colors"
+        className="hover:bg-[#60646463] rounded-md text-white font-semibold transition-colors"
          onClick={()=>{
           sideBarRef.current.style.right = "-100%";
         }}>
