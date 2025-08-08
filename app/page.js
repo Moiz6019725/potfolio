@@ -34,7 +34,7 @@ export default function Home() {
       )}
 
       <FloatingDotsBackground />
-      <div className="flex h-screen justify-evenly gap-x-4 max-[915px]:flex-col-reverse">
+      <div className="flex h-[89vh] justify-evenly gap-x-4 max-[915px]:flex-col-reverse">
         <div className="w-full flex flex-col justify-center items-start pl-[6%] max-[915px]:items-center max-[915px]:text-center">
           <h1 className="text-white text-7xl font-semibold max-[915px]:text-3xl">
             I am Moiz <span className="text-[#422E71]">Rehman</span>
@@ -69,13 +69,15 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex items-center justify-center">
-          <Image
-            src="/profilepic.jpg"
-            alt="Hero Image"
-            width={280}
-            height={280}
-            className=" object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
-          />
+          <div className="imageCont h-64 w-64 max-[915px]:h-48 max-[915px]:w-48">
+            <Image
+              src="/profilepic.jpg"
+              alt="Hero Image"
+              width={280}
+              height={280}
+              className=" object-cover rounded-full border-4 border-gradient shadow-[0_0_10px_10px_#343D3F] hover:shadow-[0_0_20px_rgba(0,0,0,0.7)] transition-shadow duration-300 ease-in-out"
+            />
+          </div>
         </div>
       </div>
       <div className="divider h-[1px] w-[80%] m-auto bg-gray-300"></div>
